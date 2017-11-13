@@ -1,5 +1,8 @@
 package gui.view;
 
+import gui.controller.GUIAppController;
+import javax.swing.JFrame;
+
 public class GUIFrame
 {
 
