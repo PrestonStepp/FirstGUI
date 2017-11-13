@@ -19,7 +19,9 @@ public class GUIPanel extends JPanel
 		firstButton = new JButton("Wow a button");
 		baseLayout = new SpringLayout();
 		
+		
 		setupPanel();
+		setupLayout();
 	}
 	
 	/**
@@ -31,16 +33,23 @@ public class GUIPanel extends JPanel
 		this.setBackground(Color.CYAN);
 		this.setLayout(baseLayout);
 		this.add(firstButton);
-	}
-	
-	
-	 // This is used to hold all the layout and arrangement code for SpringLayout.
-	private void setupLayout()
-	{
 		
 	}
 	
-	 // This helper method is used to link any GUI components to the associated listeners.
+	
+	 /**
+	  *  This is used to hold all the layout and arrangement code for SpringLayout.
+	  */
+	private void setupLayout()
+	{
+		baseLayout.putConstraint(SpringLayout.WEST, firstButton, 10, SpringLayout.WEST, this);
+		baseLayout.putConstraint(SpringLayout.SOUTH, firstButton, -10, SpringLayout.SOUTH, this);
+		
+	}
+	
+	 /**
+	  *  This helper method is used to link any GUI components to the associated listeners.
+	  */
 	private void setupListeners()
 	{
 		
