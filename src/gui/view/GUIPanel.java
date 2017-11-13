@@ -59,7 +59,7 @@ public class GUIPanel extends JPanel
 			{
 				public void actionPerformed(ActionEvent click)
 				{
-					
+					changeBackgroundColor();
 				}
 			});
 	}
