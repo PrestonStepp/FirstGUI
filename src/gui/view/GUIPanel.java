@@ -22,6 +22,7 @@ public class GUIPanel extends JPanel
 		
 		setupPanel();
 		setupLayout();
+		setupListeners();
 	}
 	
 	/**
