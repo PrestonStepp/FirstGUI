@@ -12,7 +12,7 @@ public class GUIFrame extends JFrame
 		super();
 		this.appController = appController;
 		
-		seturFrame();
+		setupFrame();
 	}
 	
 	private void setupFrame()
