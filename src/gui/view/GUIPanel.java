@@ -14,7 +14,7 @@ public class GUIPanel extends JPanel
 	{
 		super();
 		this.appController = appController;
-		firstButton = new JButton("Wow a button")
+		firstButton = new JButton("Wow a button");
 		
 	}
 }
