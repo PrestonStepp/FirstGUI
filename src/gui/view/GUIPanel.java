@@ -10,8 +10,11 @@ public class GUIPanel extends JPanel
 	private GUIAppController appController;
 	private JButton firstButton;
 	
-	public GUIPanel(GUIAppController appConroller)
+	public GUIPanel(GUIAppController appController)
 	{
 		super();
+		this.appController = appController;
+		firstButton = new JButton("Wow a button")
+		
 	}
 }
